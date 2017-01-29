@@ -1,0 +1,32 @@
+{
+  "name": "@emmetio/output-renderer",
+  "version": "0.0.1",
+  "description": "Utility module for rendering parsed Emmet abbreviation nodes",
+  "main": "dist/output-renderer.cjs.js",
+  "module": "dist/output-renderer.es.js",
+  "scripts": {
+    "test": "mocha",
+    "build": "rollup -c",
+    "prepublish": "npm run test && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emmetio/output-renderer.git"
+  },
+  "keywords": [],
+  "author": "Sergey Chikuyonok <serge.che@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/emmetio/output-renderer/issues"
+  },
+  "homepage": "https://github.com/emmetio/output-renderer#readme",
+  "dependencies": {
+    "@emmetio/field-parser": "^0.2.0"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.22.0",
+    "babel-register": "^6.22.0",
+    "mocha": "^3.2.0",
+    "rollup": "^0.41.4"
+  }
+}
