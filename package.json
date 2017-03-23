@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/emmetio/output-renderer#readme",
   "dependencies": {
-    "@emmetio/field-parser": "^0.2.0"
+    "@emmetio/field-parser": "^0.3.0"
   },
   "devDependencies": {
     "babel-plugin-transform-es2015-modules-commonjs": "^6.22.0",
