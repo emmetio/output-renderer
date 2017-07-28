@@ -1,6 +1,6 @@
 {
   "name": "@emmetio/output-renderer",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Utility module for rendering parsed Emmet abbreviation nodes",
   "main": "dist/output-renderer.cjs.js",
   "module": "dist/output-renderer.es.js",
