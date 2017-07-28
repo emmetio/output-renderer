@@ -49,14 +49,10 @@ export default function render(tree, field, formatter) {
 }
 
 function run(nodes, formatter, fieldsRenderer) {
-	return nodes.filter(notGroup).map(node => {
+	return nodes.map(node => {
 		const outNode = formatter(new OutputNode(node, fieldsRenderer));
 		return outNode ? outNode.toString(run(node.children, formatter, fieldsRenderer)) : '';
 	}).join('');
-}
-
-function notGroup(node) {
-    return !node.isGroup;
 }
 
 /**
